@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Arch Design For House Exterior at Exterior
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: auto;max-height: 480px; object-fit: cover;width: 100%;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}.hide{display:none;visibility:hidden}.popbox{position:fixed;top:0;left:0;bottom:0;width:100%;z-index:1000000}.pop-content{display:block;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:2;box-shadow:0 3px 20px 0 rgba(0,0,0,.5)}.popcontent{padding:20px;background:#fff;border-radius:5px;overflow:hidden}.pop-overlay{position:absolute;top:0;left:0;bottom:0;width:100%;z-index:1;background:rgb(255 255 255 / 93%)}.popbox-close-button{position:absolute;width:28px;height:28px;line-height:28px;text-align:center;top:-14px;right:-14px;color:#c82333;background-color:#fff;box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);border:none;border-radius:50%;cursor:pointer;font-size:28px;font-weight:700;padding:0}.popcontent img{width:100%;height:100%;display:block}.flowbox{position:relative;overflow:hidden}@media  screen and (max-width:840px){.pop-content{width:90%;height:auto;top:20%}.popcontent img{height:auto}}
+</style>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Potter"
+  },
+  "headline": "Arch Design For House Exterior",
+  "datePublished": "2021-09-22T06:06:04Z",
+  "image": "https://i.pinimg.com/736x/47/12/07/47120747c935047028bcaa9d0e538634--brick-design-exterior-design.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "{niche} Tips and References",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=arch%20design%20for%20house%20exterior",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://i.pinimg.com/236x/b0/21/b1/b021b14b8e06af4c8faf617c5c6cc0ce.jpg" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://i.pinimg.com/originals/b0/21/b1/b021b14b8e06af4c8faf617c5c6cc0ce.jpg" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Arch Design For House Exterior at Exterior
+            </a>
+        </h1>
+        <p>
+                            Best exterior Tips and References website . Search anything about exterior Ideas in this website.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Arch Design For House Exterior</strong>. If you’re like most homeowners, too many design choices can be overwhelming. Browse through completed projects by makemyhouse for architecture design &amp; interior design ideas for residential and commercial needs.</p>
+            <figure>
+        <img class="v-cover ads-img lazyload" data-src="https://i.pinimg.com/originals/b0/21/b1/b021b14b8e06af4c8faf617c5c6cc0ce.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Pin di Addition/Remodel" width="640" height="360" />
+        <figcaption>Pin di Addition/Remodel from www.pinterest.com.mx</figcaption>
+    </figure>
+        <div class="d-block p-4">
+	<center>
+		<script type="text/javascript">
+	atOptions = {
+		'key' : '11c10afabb81ba52c0569a7643ad5c41',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.effectiveperformanceformat.com/11c10afabb81ba52c0569a7643ad5c41/invoke.js"></scr' + 'ipt>');
+		</script>
+	</center>
+</div>    <p>
+        This adds style to not only the inside of your home, but the outside as well. Houzz has millions of beautiful photos from the world’s top designers, giving you the best design ideas for your dream remodel or simple room refresh. A front elevation is a part of a scenic design.
+    </p>
+    <h3>Pin di Addition/Remodel</h3>
+    <p>Architects prefer to focus on the frontal design so that it can elevate the look of exteriors in a modern house. Here at provia we are excited to pass on our design expertise to you with two powerful home exterior design tools and a few other resources to help you visualize and plan the house exterior of your dreams. Start your exterior design project today. No matter what style our exterior design professionals will help you design your home completely online!</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img lazyload" alt="Interior design arches and columns exterior mediterranean" data-src="https://i.pinimg.com/236x/c8/92/63/c892634e41fde609f877cc265c8108e9--wood-molding-moldings.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="640" height="360" />
+        <small>Source: www.pinterest.co.uk</small>
+                    <p align="justify">Browse 220 exterior arch on houzz whether you want inspiration for planning exterior arch or are building designer exterior arch from scratch, houzz has 220 pictures from the best designers, decorators, and architects in the country, including polhemus savery. Also, check out our online visual paint software where you can upload a photo. Home exterior design software used by millions..</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img lazyload" alt="Best Pillar Arch Design Ideas &amp; Remodel Pictures Houzz" data-src="https://st.hzcdn.com/fimgs/50b19f1c0d3f3d46_8535-w500-h400-b0-p0--mediterranean-porch.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="640" height="360" />
+        <small>Source: www.houzz.com</small>
+                    <p align="justify">Ad design the exterior of your house from the yard to the color and more. See more ideas about house design, house styles, house exterior. Apply the arch top doors to home interior: Get exterior design ideas for your modern house elevation. Browse 265,889 arch design ideas on houzz.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img lazyload" alt="Tall two story arch entry way Architecture exterior" data-src="https://i.pinimg.com/236x/38/a4/f0/38a4f083a76aa01d1b48343eb34d8425.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="640" height="360" />
+        <small>Source: www.pinterest.com</small>
+                    <p align="justify">Houzz has millions of beautiful photos from the world’s top designers, giving you the best design ideas for your dream remodel or simple room refresh. Ad design the exterior of your house from the yard to the color and more. Also, check out our online visual paint software where you can upload a photo. This adds style to not only.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img lazyload" alt="Pin by Tugba Ozer Acar on home decor Mediterranean homes" data-src="https://i.pinimg.com/236x/de/a2/eb/dea2eb52216ba0c1bd46a6662c614c74.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="640" height="360" />
+        <small>Source: www.pinterest.com</small>
+                    <p align="justify">View your home in 3d, the perfect way for home stylers to visualize. You can also try placing this arch around your bathroom sink. Houzz has millions of beautiful photos from the world’s top designers, giving you the best design ideas for your dream remodel or simple room refresh. Start your exterior design project today. Look through interior arch designs.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img lazyload" alt="Pin di Addition/Remodel" data-src="https://i.pinimg.com/236x/35/55/c5/3555c5af63626589142158e7b2cd5712.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="640" height="360" />
+        <small>Source: www.pinterest.com.mx</small>
+                    <p align="justify">Modern circular arch gate design for stylish homes you can really have a stylish exterior with a gate like this. This adds style to not only the inside of your home, but the outside as well. Apply the arch top doors to home interior: A front elevation is a part of a scenic design. No matter what style our exterior.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img lazyload" alt="ARCH ALENMAR on Twitter Dream house exterior, Dream" data-src="https://i.pinimg.com/236x/c2/32/cc/c232cc326b81c5ef8214861504e7f5aa.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="640" height="360" />
+        <small>Source: www.pinterest.com</small>
+                    <p align="justify">Home exterior design software used by millions. These exterior house design apps give you the freedom to design the exterior just how you’d expect it to be, which is highly beneficial for homeowners. Start your exterior design project today. Houzz has millions of beautiful photos from the world’s top designers, giving you the best design ideas for your dream remodel.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img lazyload" alt="Arch within an arch" data-src="https://st.hzcdn.com/simgs/23c112b70f647dc7_4-2413/mediterranean-exterior.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="640" height="360" />
+        <small>Source: www.houzz.com</small>
+                    <p align="justify">It’s a continuous curve often seen on bridges and arcades, which is a row of arches used for a passageway or type of covering. These exterior house design apps give you the freedom to design the exterior just how you’d expect it to be, which is highly beneficial for homeowners. Here at provia we are excited to pass on our.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img lazyload" alt="Classic exterior + grand entrance + arch doorway + white" data-src="https://i.pinimg.com/236x/a9/1e/5a/a91e5abdbdf438bc971a1a297e817928.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="640" height="360" />
+        <small>Source: www.pinterest.com</small>
+                    <p align="justify">It is a drawing of the scenic element (or the entire set) as seen from the front and has all the measurements written on it. See more ideas about house front design, house elevation, house designs exterior. Browse through completed projects by makemyhouse for architecture design &amp; interior design ideas for residential and commercial needs. From siding, windows, doors, landscaping.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img lazyload" alt="Two stores home with stucco and arch White stucco house" data-src="https://i.pinimg.com/236x/4f/67/6d/4f676d19d50f4cf2a0d5db7f0d18686c.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="640" height="360" />
+        <small>Source: www.pinterest.com.mx</small>
+                    <p align="justify">Search by color or style. If you need help with your home&#039;s exterior design then you need to visit visioneering homes! Check out 101 house exterior ideas. See more ideas about house front design, house elevation, house designs exterior. This adds style to not only the inside of your home, but the outside as well.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img lazyload" alt="Home Design, Pictures, Remodel, Decor and Ideas page 22" data-src="https://i.pinimg.com/236x/47/12/07/47120747c935047028bcaa9d0e538634--brick-design-exterior-design.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="640" height="360" />
+        <small>Source: www.pinterest.com</small>
+                    <p align="justify">A front elevation is a part of a scenic design. That said, we’ve reviewed 12 of the best options out there to consider, and they are absolutely free to use. The exterior architecture of a house or building, the shapes and colors of the facades, the use of the materials used to dress the various structures that compose it and.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img lazyload" alt="Exterior Front Door Designs" data-src="http://www.dgrinteriordesigns.com/wp-content/uploads/2012/07/Exterior-Front-Door-Designs-3.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="640" height="360" />
+        <small>Source: www.dgrinteriordesigns.com</small>
+                    <p align="justify">Architects prefer to focus on the frontal design so that it can elevate the look of exteriors in a modern house. You have searched for arch design ideas and this page displays the best picture matches we have for arch design ideas in january 2022. See more ideas about house exterior, house design, architecture. If you’re like most homeowners, too.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img lazyload" alt="Exterior House Painting Cost WeddingIdeasDecoration" data-src="https://i.pinimg.com/236x/79/26/7b/79267bd437987f453c58261cfde48870.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="640" height="360" />
+        <small>Source: www.pinterest.com</small>
+                    <p align="justify">Inspire yourself in this photo and go to the next photo where we offer you another great idea. That is why elevation design in the building comes out from the overall structure of the building. View your home in 3d, the perfect way for home stylers to visualize. View your home in 3d, the perfect way for home stylers to.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img lazyload" alt="30 Classy Mediterranean House Exterior Design Ideas 18142" data-src="https://gotohomerepair.com/wp-content/uploads/2017/02/Mediterranean-exterior-of-traditional-Spanish-style-home-with-brick-walkway-arched-entryway-red-tile-roof-and-Landscape-lighting.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="640" height="360" />
+        <small>Source: gotohomerepair.com</small>
+                    <p align="justify">The exterior architecture of a house or building, the shapes and colors of the facades, the use of the materials used to dress the various structures that compose it and its insertion into the site are the different manifestations of the architectural work.the creativity of an architect is expressed through the appearance of a building and its layout in the.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img lazyload" alt="Our &quot;New&quot; Repurposed Front Door + Wood Door Inspiration" data-src="https://i.pinimg.com/236x/2a/ef/e2/2aefe244b167f1454841be9b237609ac.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="640" height="360" />
+        <small>Source: www.pinterest.com</small>
+                    <p align="justify">Here at provia we are excited to pass on our design expertise to you with two powerful home exterior design tools and a few other resources to help you visualize and plan the house exterior of your dreams. Apply the arch top doors to home interior: Home exterior design software used by millions. Welcome to our massive house exterior photo.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img lazyload" alt="All white villa home with presidential style inspiration" data-src="https://i.pinimg.com/236x/b8/61/52/b86152dcd87ecc7e964f2d01ecf1a48c.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="640" height="360" />
+        <small>Source: www.pinterest.co.uk</small>
+                    <p align="justify">It is a drawing of the scenic element (or the entire set) as seen from the front and has all the measurements written on it. Home exterior design software used by millions. That is why elevation design in the building comes out from the overall structure of the building. Browse 220 exterior arch on houzz whether you want inspiration for.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img lazyload" alt="See the reflection of the ArabicIslamic culture in the" data-src="https://i.pinimg.com/236x/97/86/2f/97862f00194fc2590335e2e7046d7c2d.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="640" height="360" />
+        <small>Source: www.pinterest.com</small>
+                    <p align="justify">Out of two types of projects that they came across, some buildings are designed in a manner to make them look stunning and iconic. If you’re like most homeowners, too many design choices can be overwhelming. See more ideas about house design, house styles, house exterior. These exterior house design apps give you the freedom to design the exterior just.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img lazyload" alt="Exterior Arch Portico Front Entry Traditional Entry" data-src="https://st.hzcdn.com/simgs/9891c3dd0fba66d3_4-5736/traditional-entry.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="640" height="360" />
+        <small>Source: www.houzz.com</small>
+                    <p align="justify">View your home in 3d, the perfect way for home stylers to visualize. A front elevation is a part of a scenic design. Browse 265,889 arch design ideas on houzz. From siding, windows, doors, landscaping and more, our designers help you visualize your home design online. This adds style to not only the inside of your home, but the outside.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img lazyload" alt="Exterior Modern Entrance Arch Design" data-src="https://p4.wallpaperbetter.com/wallpaper/241/805/159/arch-architectural-design-architecture-building-wallpaper-2af898ab15dc73d26f2aa098ea985a52.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="640" height="360" />
+        <small>Source: dsignwesome.blogspot.com</small>
+                    <p align="justify">It is a drawing of the scenic element (or the entire set) as seen from the front and has all the measurements written on it. No matter what style our exterior design professionals will help you design your home completely online! Browse 265,889 arch design ideas on houzz. Browse 602 interior arch designs on houzz whether you want inspiration for.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img lazyload" alt="brick arch entry and wood gables House exterior, Brick" data-src="https://i.pinimg.com/236x/5f/0f/f0/5f0ff087569d96ed19be05ad1ca413b5.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="640" height="360" />
+        <small>Source: www.pinterest.com</small>
+                    <p align="justify">Search by color or style. Ad design the exterior of your house from the yard to the color and more. This adds style to not only the inside of your home, but the outside as well. See your home with a new look. Adorable look and design that will protect your house of rubbers, will give authentic look and will.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img lazyload" alt="French Style Lakehouse Stunning French Style Lakehouse" data-src="https://i.pinimg.com/236x/80/bf/e8/80bfe8d1177bc05ff9eda860309eba99.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="640" height="360" />
+        <small>Source: www.pinterest.com</small>
+                    <p align="justify">A front elevation is a part of a scenic design. Browse 220 exterior arch on houzz whether you want inspiration for planning exterior arch or are building designer exterior arch from scratch, houzz has 220 pictures from the best designers, decorators, and architects in the country, including polhemus savery. Apply the arch top doors to home interior: Out of two.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img lazyload" alt="Pin by Elizabeth Ellinger on Arch Inspo Brick exterior" data-src="https://i.pinimg.com/236x/b0/21/b1/b021b14b8e06af4c8faf617c5c6cc0ce.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="640" height="360" />
+        <small>Source: www.pinterest.com</small>
+                    <p align="justify">Browse 602 interior arch designs on houzz whether you want inspiration for planning interior arch designs or are building designer interior arch designs from scratch, houzz has 602 pictures from the best designers, decorators, and architects in the country, including rikki snyder and karen hartley interiors. See your home with a new look. A front elevation is a part of.</p>
+    </aside>
+</section>
+
+<section>
+    <article>
+        <p>
+                        
+                        
+                                    <a href="/boise-exteriors.html"><i>&larr; boise exteriors</i></a>
+                                                                    
+                        
+                                                    <a href="/slab-exterior-doors-for-sale.html"><i>slab exterior doors for sale &rarr;</i></a>
+                                            </p>
+    </article>
+</section>
+        <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>        </center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="p/dmca.html">Dmca</a>
+                            <a href="p/contact.html">Contact</a>
+                            <a href="p/privacy-policy.html">Privacy Policy</a>
+                            <a href="p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"/>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+    <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = '#EDIT-WITH-YOUR-ADS';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+                var query = $('input[name="q"]').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+                var target = 'site:'+location.host+' '+query;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.open(uri, '_blank');
+            });
+        });
+    </script>
+</body>
+
+</html>

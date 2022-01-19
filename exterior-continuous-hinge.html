@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Exterior Continuous Hinge at Exterior
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: auto;max-height: 480px; object-fit: cover;width: 100%;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}.hide{display:none;visibility:hidden}.popbox{position:fixed;top:0;left:0;bottom:0;width:100%;z-index:1000000}.pop-content{display:block;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:2;box-shadow:0 3px 20px 0 rgba(0,0,0,.5)}.popcontent{padding:20px;background:#fff;border-radius:5px;overflow:hidden}.pop-overlay{position:absolute;top:0;left:0;bottom:0;width:100%;z-index:1;background:rgb(255 255 255 / 93%)}.popbox-close-button{position:absolute;width:28px;height:28px;line-height:28px;text-align:center;top:-14px;right:-14px;color:#c82333;background-color:#fff;box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);border:none;border-radius:50%;cursor:pointer;font-size:28px;font-weight:700;padding:0}.popcontent img{width:100%;height:100%;display:block}.flowbox{position:relative;overflow:hidden}@media  screen and (max-width:840px){.pop-content{width:90%;height:auto;top:20%}.popcontent img{height:auto}}
+</style>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Potter"
+  },
+  "headline": "Exterior Continuous Hinge",
+  "datePublished": "2021-12-24T08:54:41Z",
+  "image": "https://i.pinimg.com/originals/79/d0/04/79d00446759edccf5d5dfb9b18710383.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "{niche} Tips and References",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=exterior%20continuous%20hinge",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="http://www.concealedinvisiblehinge.com/photo/concealedinvisiblehinge/editor/20190626093711_45637.jpg" as="image" media="(max-width: 420px)">
+<link rel="preload" href="http://www.concealedinvisiblehinge.com/photo/concealedinvisiblehinge/editor/20190626093711_45637.jpg" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Exterior Continuous Hinge at Exterior
+            </a>
+        </h1>
+        <p>
+                            Best exterior Tips and References website . Search anything about exterior Ideas in this website.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Exterior Continuous Hinge</strong>. But did you check ebay? From everything to the very thing.</p>
+            <figure>
+        <img class="v-cover ads-img lazyload" data-src="http://www.concealedinvisiblehinge.com/photo/concealedinvisiblehinge/editor/20190626093711_45637.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Residential Exterior Door Hinge 4&quot; Inch Square" width="640" height="360" />
+        <figcaption>Residential Exterior Door Hinge 4&quot; Inch Square from www.hingeoutlet.com</figcaption>
+    </figure>
+        <div class="d-block p-4">
+	<center>
+		<script type="text/javascript">
+	atOptions = {
+		'key' : '11c10afabb81ba52c0569a7643ad5c41',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.effectiveperformanceformat.com/11c10afabb81ba52c0569a7643ad5c41/invoke.js"></scr' + 'ipt>');
+		</script>
+	</center>
+</div>    <p>
+        From everything to the very thing. Al sinds 1947 uw specialist in bevestigingsmaterialen. Check out continuous hinges on ebay.
+    </p>
+    <h3>Residential Exterior Door Hinge 4&quot; Inch Square</h3>
+    <p>Ad wide range of hinges. Ad looking for great deals on continuous hinges? From everything to the very thing. Ad bestel nu eenvoudig online uw bevestigingsmaterialen en meer tegen aantrekkelijke prijzen.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img lazyload" alt="full surface continuous geared door hinge" data-src="http://www.rockwellsecurityinc.com/wp-content/uploads/2013/12/a0200.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="640" height="360" />
+        <small>Source: www.rockwellsecurityinc.com</small>
+                    <p align="justify">Check out continuous hinges on ebay. But did you check ebay? From everything to the very thing. Ad wide range of hinges. Ad looking for great deals on continuous hinges?</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img lazyload" alt="Residential Exterior Door Hinge 4&quot; Inch Square" data-src="https://cdn.shopify.com/s/files/1/1082/8880/products/4_inch_square_residential_hinge_opposite_zig_zag_pattern_-_satin_nickel_01f21f32-12b9-48ed-8201-5f0a8cc70961_800x.jpg?v=1556511113" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="640" height="360" />
+        <small>Source: www.hingeoutlet.com</small>
+                    <p align="justify">Ad bestel nu eenvoudig online uw bevestigingsmaterialen en meer tegen aantrekkelijke prijzen. From everything to the very thing. Al sinds 1947 uw specialist in bevestigingsmaterialen. But did you check ebay? Ad wide range of hinges.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img lazyload" alt="Residential Exterior Door Hinge 4&quot; with 5/8&quot; radius" data-src="https://cdn.shopify.com/s/files/1/1082/8880/products/Opposite4inch58radiusSatinNickel_1200x.jpg?v=1599400446" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="640" height="360" />
+        <small>Source: www.hingeoutlet.com</small>
+                    <p align="justify">Check out continuous hinges on ebay. Al sinds 1947 uw specialist in bevestigingsmaterialen. Ad bestel nu eenvoudig online uw bevestigingsmaterialen en meer tegen aantrekkelijke prijzen. Ad wide range of hinges. Ad looking for great deals on continuous hinges?</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img lazyload" alt="Shop Hager 780 83in H Clear Interior/Exterior Piano" data-src="https://mobileimages.lowes.com/product/converted/041359/041359480464.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="640" height="360" />
+        <small>Source: www.lowes.com</small>
+                    <p align="justify">Ad bestel nu eenvoudig online uw bevestigingsmaterialen en meer tegen aantrekkelijke prijzen. Check out continuous hinges on ebay. Ad looking for great deals on continuous hinges? Al sinds 1947 uw specialist in bevestigingsmaterialen. Specialists in safety supply &amp; personal protective equipment.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img lazyload" alt="SFGHFS2183SDDU ROCKWELL FULL SURFACE CONTINUOUS GEARED" data-src="http://www.rockwellsecurityinc.com/wp-content/uploads/2017/06/SFGHFS2183SD-DU.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="640" height="360" />
+        <small>Source: premiumhardware.net</small>
+                    <p align="justify">Check out continuous hinges on ebay. Ad looking for great deals on continuous hinges? From everything to the very thing. But did you check ebay? Ad wide range of hinges.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img lazyload" alt="Residential Exterior Door Hinge 4&quot; with 1/4&quot; radius" data-src="https://cdn.shopify.com/s/files/1/1082/8880/products/4_inch_with_14_inch_residential_hinge_opposite_zig_zag_pattern_-_antique_brass_finish_edb048cb-d5c0-4774-82b0-ce02fc1c759a_2000x.jpg?v=1556510993" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="640" height="360" />
+        <small>Source: www.hingeoutlet.com</small>
+                    <p align="justify">Check out continuous hinges on ebay. Ad looking for great deals on continuous hinges? But did you check ebay? From everything to the very thing. Al sinds 1947 uw specialist in bevestigingsmaterialen.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img lazyload" alt="Quality Door &amp; Hardware, Inc. Announces Pemko Continuous" data-src="http://ww1.prweb.com/prfiles/2013/02/05/10400694/CFM.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="640" height="360" />
+        <small>Source: www.prweb.com</small>
+                    <p align="justify">Ad wide range of hinges. Al sinds 1947 uw specialist in bevestigingsmaterialen. Ad looking for great deals on continuous hinges? Check out continuous hinges on ebay. Specialists in safety supply &amp; personal protective equipment.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img lazyload" alt="Hager 780 85in Chrome Piano/Continuous Door Hinge at" data-src="https://mobileimages.lowes.com/product/converted/041359/041359495260.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="640" height="360" />
+        <small>Source: www.lowes.com</small>
+                    <p align="justify">Ad looking for great deals on continuous hinges? Al sinds 1947 uw specialist in bevestigingsmaterialen. Check out continuous hinges on ebay. From everything to the very thing. Ad bestel nu eenvoudig online uw bevestigingsmaterialen en meer tegen aantrekkelijke prijzen.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img lazyload" alt="Shop Hager 780 83in Piano/Continuous Door Hinge at" data-src="https://mobileimages.lowes.com/product/converted/041359/041359181750.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="640" height="360" />
+        <small>Source: www.lowes.com</small>
+                    <p align="justify">Ad bestel nu eenvoudig online uw bevestigingsmaterialen en meer tegen aantrekkelijke prijzen. From everything to the very thing. Al sinds 1947 uw specialist in bevestigingsmaterialen. But did you check ebay? Check out continuous hinges on ebay.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img lazyload" alt="National Hardware 31/2in Chrome Mortise Door Hinge Lowes" data-src="https://i.pinimg.com/236x/79/d0/04/79d00446759edccf5d5dfb9b18710383.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="640" height="360" />
+        <small>Source: www.pinterest.com</small>
+                    <p align="justify">From everything to the very thing. Al sinds 1947 uw specialist in bevestigingsmaterialen. Ad wide range of hinges. Ad looking for great deals on continuous hinges? Ad bestel nu eenvoudig online uw bevestigingsmaterialen en meer tegen aantrekkelijke prijzen.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img lazyload" alt="Residential Exterior Door Hinge 4&quot; Inch Square" data-src="https://cdn.shopify.com/s/files/1/1082/8880/products/4_inch_square_residential_hinge_opposite_zig_zag_pattern_-_antique_brass_270b9e80-ead4-4437-baf3-370a918398bd_1200x.jpg?v=1627931229" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="640" height="360" />
+        <small>Source: www.hingeoutlet.com</small>
+                    <p align="justify">Ad looking for great deals on continuous hinges? Al sinds 1947 uw specialist in bevestigingsmaterialen. Ad bestel nu eenvoudig online uw bevestigingsmaterialen en meer tegen aantrekkelijke prijzen. Check out continuous hinges on ebay. Ad wide range of hinges.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img lazyload" alt="Hinge 39x60 hatch hinges ROCA Industry" data-src="https://www.rocaindustry.com/wp-content/uploads/2019/04/441690.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="640" height="360" />
+        <small>Source: www.rocaindustry.com</small>
+                    <p align="justify">Ad wide range of hinges. But did you check ebay? Specialists in safety supply &amp; personal protective equipment. From everything to the very thing. Ad bestel nu eenvoudig online uw bevestigingsmaterialen en meer tegen aantrekkelijke prijzen.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img lazyload" alt="Schuco Door Hinges/SimplySmart Door Hinges, Metal Door" data-src="https://5.imimg.com/data5/BB/VO/MY-2798906/v.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="640" height="360" />
+        <small>Source: www.indiamart.com</small>
+                    <p align="justify">Ad wide range of hinges. But did you check ebay? Ad looking for great deals on continuous hinges? From everything to the very thing. Ad bestel nu eenvoudig online uw bevestigingsmaterialen en meer tegen aantrekkelijke prijzen.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img lazyload" alt="Continuous Hinge, Cold Rolled Steel, Nickel Plated, shop" data-src="http://cdn.shopify.com/s/files/1/2236/0921/products/national_hardware_n265-389_continuous_hinge_1024x1024.jpg?v=1513692567" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="640" height="360" />
+        <small>Source: www.lifeandhome.com</small>
+                    <p align="justify">Specialists in safety supply &amp; personal protective equipment. Ad looking for great deals on continuous hinges? Ad bestel nu eenvoudig online uw bevestigingsmaterialen en meer tegen aantrekkelijke prijzen. Ad wide range of hinges. From everything to the very thing.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img lazyload" alt="MCKINNEY Swing Clear Hinge With Holes, Dull Chrome Finish" data-src="http://static.grainger.com/rp/s/is/image/Grainger/25HE18_AS01" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="640" height="360" />
+        <small>Source: www.grainger.com</small>
+                    <p align="justify">Ad bestel nu eenvoudig online uw bevestigingsmaterialen en meer tegen aantrekkelijke prijzen. From everything to the very thing. Ad looking for great deals on continuous hinges? Ad wide range of hinges. Check out continuous hinges on ebay.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img lazyload" alt="adjustable door hinge" data-src="https://www.rockwellsecurityinc.com/wp-content/uploads/2016/04/50-new-B.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="640" height="360" />
+        <small>Source: www.rockwellsecurityinc.com</small>
+                    <p align="justify">Specialists in safety supply &amp; personal protective equipment. But did you check ebay? Al sinds 1947 uw specialist in bevestigingsmaterialen. Check out continuous hinges on ebay. From everything to the very thing.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img lazyload" alt="Custom Made Aluminum Continuous Hinge , Heavy Duty Piano" data-src="http://www.concealedinvisiblehinge.com/photo/concealedinvisiblehinge/editor/20190626093711_45637.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="640" height="360" />
+        <small>Source: www.concealedinvisiblehinge.com</small>
+                    <p align="justify">Check out continuous hinges on ebay. Ad looking for great deals on continuous hinges? Specialists in safety supply &amp; personal protective equipment. From everything to the very thing. Al sinds 1947 uw specialist in bevestigingsmaterialen.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img lazyload" alt="Shop Hager 780 83in H Clear Radius Interior/Exterior" data-src="https://mobileimages.lowes.com/product/converted/041359/041359078562.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="640" height="360" />
+        <small>Source: www.lowes.com</small>
+                    <p align="justify">Specialists in safety supply &amp; personal protective equipment. From everything to the very thing. Check out continuous hinges on ebay. But did you check ebay? Ad bestel nu eenvoudig online uw bevestigingsmaterialen en meer tegen aantrekkelijke prijzen.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img lazyload" alt="New range of hinges and door furniture" data-src="http://www.fdbnews.co.uk/wp-content/uploads/2011/10/FDB1904.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="640" height="360" />
+        <small>Source: www.fdbnews.co.uk</small>
+                    <p align="justify">Ad wide range of hinges. Specialists in safety supply &amp; personal protective equipment. From everything to the very thing. Check out continuous hinges on ebay. Ad looking for great deals on continuous hinges?</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img lazyload" alt="Custom Made Aluminum Continuous Hinge , Heavy Duty Piano" data-src="http://www.concealedinvisiblehinge.com/photo/concealedinvisiblehinge/editor/20190626093721_26434.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="640" height="360" />
+        <small>Source: www.concealedinvisiblehinge.com</small>
+                    <p align="justify">From everything to the very thing. Al sinds 1947 uw specialist in bevestigingsmaterialen. Ad looking for great deals on continuous hinges? Specialists in safety supply &amp; personal protective equipment. Ad wide range of hinges.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img lazyload" alt="Residential Exterior Door Hinge 4&quot; Inch Square" data-src="https://cdn.shopify.com/s/files/1/1082/8880/products/4_inch_square_residential_hinge_opposite_zig_zag_pattern_-_polished_chrome_c146aff4-a934-4234-b398-93fa35030561_600x.jpg?v=1556511113" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="640" height="360" />
+        <small>Source: www.hingeoutlet.com</small>
+                    <p align="justify">Ad wide range of hinges. From everything to the very thing. Ad bestel nu eenvoudig online uw bevestigingsmaterialen en meer tegen aantrekkelijke prijzen. Check out continuous hinges on ebay. Ad looking for great deals on continuous hinges?</p>
+    </aside>
+</section>
+
+<section>
+    <article>
+        <p>
+                        
+                        
+                                    <a href="/2007-ford-expedition-exterior-door-handle-replacement.html"><i>&larr; 2007 ford expedition exterior door handle replacement</i></a>
+                                                                    
+                        
+                                                    <a href="/home-depot-modern-exterior-doors.html"><i>home depot modern exterior doors &rarr;</i></a>
+                                            </p>
+    </article>
+</section>
+        <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>        </center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="p/dmca.html">Dmca</a>
+                            <a href="p/contact.html">Contact</a>
+                            <a href="p/privacy-policy.html">Privacy Policy</a>
+                            <a href="p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"/>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+    <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = '#EDIT-WITH-YOUR-ADS';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+                var query = $('input[name="q"]').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+                var target = 'site:'+location.host+' '+query;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.open(uri, '_blank');
+            });
+        });
+    </script>
+</body>
+
+</html>

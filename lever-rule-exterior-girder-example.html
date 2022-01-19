@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Lever Rule Exterior Girder Example at Exterior
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: auto;max-height: 480px; object-fit: cover;width: 100%;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}.hide{display:none;visibility:hidden}.popbox{position:fixed;top:0;left:0;bottom:0;width:100%;z-index:1000000}.pop-content{display:block;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:2;box-shadow:0 3px 20px 0 rgba(0,0,0,.5)}.popcontent{padding:20px;background:#fff;border-radius:5px;overflow:hidden}.pop-overlay{position:absolute;top:0;left:0;bottom:0;width:100%;z-index:1;background:rgb(255 255 255 / 93%)}.popbox-close-button{position:absolute;width:28px;height:28px;line-height:28px;text-align:center;top:-14px;right:-14px;color:#c82333;background-color:#fff;box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);border:none;border-radius:50%;cursor:pointer;font-size:28px;font-weight:700;padding:0}.popcontent img{width:100%;height:100%;display:block}.flowbox{position:relative;overflow:hidden}@media  screen and (max-width:840px){.pop-content{width:90%;height:auto;top:20%}.popcontent img{height:auto}}
+</style>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Potter"
+  },
+  "headline": "Lever Rule Exterior Girder Example",
+  "datePublished": "2021-06-29T09:17:04Z",
+  "image": "http://subscribe.derbytelegraph.co.uk/wp-content/uploads/50966/how-to-balance-a-see-saw-using-moments-example-problem.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "{niche} Tips and References",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=lever%20rule%20exterior%20girder%20example",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://s-media-cache-ak0.pinimg.com/originals/4d/f9/48/4df948798c233b16adf6d87a333cc986.jpg" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://s-media-cache-ak0.pinimg.com/originals/4d/f9/48/4df948798c233b16adf6d87a333cc986.jpg" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Lever Rule Exterior Girder Example at Exterior
+            </a>
+        </h1>
+        <p>
+                            Best exterior Tips and References website . Search anything about exterior Ideas in this website.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Lever Rule Exterior Girder Example</strong>. To get this result, you can place the wheel lines as follows: Now that we know the compositions of the two phases, we need to find how much of each phase exists at the given temperature.</p>
+            <figure>
+        <img class="v-cover ads-img lazyload" data-src="https://s-media-cache-ak0.pinimg.com/originals/4d/f9/48/4df948798c233b16adf6d87a333cc986.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Selection of Girder Depth and Spacing YouTube" width="640" height="360" />
+        <figcaption>Selection of Girder Depth and Spacing YouTube from www.youtube.com</figcaption>
+    </figure>
+        <div class="d-block p-4">
+	<center>
+		<script type="text/javascript">
+	atOptions = {
+		'key' : '11c10afabb81ba52c0569a7643ad5c41',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.effectiveperformanceformat.com/11c10afabb81ba52c0569a7643ad5c41/invoke.js"></scr' + 'ipt>');
+		</script>
+	</center>
+</div>    <p>
+        How do you calculate exterior girder distribution factors in lrfr for longitudinal beam bridges? Am = calibration constant for the lever rule for moment (4.6.2.2.2) This design example presents an alternative design for that presented in the steel bridge design handbook design example 2a.
+    </p>
+    <h3>Selection of Girder Depth and Spacing YouTube</h3>
+    <p>For a 5 ft girder spacing, two lanes loaded and a truck with 6&#039; transverse wheel spacing, the worst case loading with the lever rule would be 1.20 wheel lines or 60% of the total truck weight going to one girder. As per the njdot highway bridge load rating manual, use the lever rule and apply the appropriate multiple presence factor (table d.1.1) along with the skew correction factor to calculate the lrfr distribution factors. A statical based procedure called the lever rule, a rigid body rotation procedure called special analysis, and an empirical equation that calculates an adjustment factor that is applied to the interior girder distribution factor. Haunch between the top of the girder and the bottom of the deck slab is not included in the.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img lazyload" alt="Method to Compute LiveLoad Distribution in Bridge Girders" data-src="https://ascelibrary.org/cms/attachment/80975/1753718/1.gif" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="640" height="360" />
+        <small>Source: ascelibrary.org</small>
+                    <p align="justify">Now that we know the compositions of the two phases, we need to find how much of each phase exists at the given temperature. For a 5 ft girder spacing, two lanes loaded and a truck with 6&#039; transverse wheel spacing, the worst case loading with the lever rule would be 1.20 wheel lines or 60% of the total truck.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img lazyload" alt="Failure modes a girder T11; b girder T21; c girder T31" data-src="https://www.researchgate.net/profile/Chao_Wu25/publication/281593457/figure/download/fig1/AS:613890673082376@1523374350984/Failure-modes-a-girder-T1-1-b-girder-T2-1-c-girder-T3-1.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="640" height="360" />
+        <small>Source: www.researchgate.net</small>
+                    <p align="justify">Lever rule • the compositions of the two coexisting phases at a point in a two phase region is given by the points of intersection of the tie line from that point. This example illustrates the design of an interior and exterior beam of a precast prestressed. E is the distance from the centerline of the exterior girder to the.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img lazyload" alt="Pedestrian Load Applied on one side of the Bridge LARS" data-src="https://communities.bentley.com/cfs-file/__key/communityserver-wikis-components-files/00-00-00-00-15/Ped-Load_2D00_1.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="640" height="360" />
+        <small>Source: communities.bentley.com</small>
+                    <p align="justify">Lever rule • the compositions of the two coexisting phases at a point in a two phase region is given by the points of intersection of the tie line from that point. Now that we know the compositions of the two phases, we need to find how much of each phase exists at the given temperature. Haunch between the top.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img lazyload" alt="ESDEP LECTURE NOTE [WG11]" data-src="http://fgg-web.fgg.uni-lj.si/~/pmoze/esdep/media/wg11/f0440001.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="640" height="360" />
+        <small>Source: fgg-web.fgg.uni-lj.si</small>
+                    <p align="justify">Lever rule • the compositions of the two coexisting phases at a point in a two phase region is given by the points of intersection of the tie line from that point. On studocu you find all the lecture notes, summaries and study guides you need to pass your exams with better grades. The top plot illustrates the proposed method.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img lazyload" alt="Figure A.9 Lever Rule for Distribution Factor Calculation" data-src="https://www.researchgate.net/profile/Amir_Reza_Ghiami_Azad/publication/330144969/figure/fig9/AS:711444433760268@1546632979867/Figure-A9-Lever-Rule-for-Distribution-Factor-Calculation-for-Girder-A.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="640" height="360" />
+        <small>Source: www.researchgate.net</small>
+                    <p align="justify">It can be used to determine the fraction of liquid and solid phases for a given binary composition and temperature that is between the liquidus and solidus line. Now that we know the compositions of the two phases, we need to find how much of each phase exists at the given temperature. To get this result, you can place the.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img lazyload" alt="Flexural Lateral Load Distribution Characteristics of" data-src="https://ascelibrary.org/cms/attachment/3f237594-9e98-422d-acf2-b81d9f4a9bb6/12.gif" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="640" height="360" />
+        <small>Source: ascelibrary.org</small>
+                    <p align="justify">Am = calibration constant for the lever rule for moment (4.6.2.2.2) A statical based procedure called the lever rule, a rigid body rotation procedure called special analysis, and an empirical equation that calculates an adjustment factor that is applied to the interior girder distribution factor. Note that for both methods, the lever rule is specified for distribution factor calculation. To.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img lazyload" alt="Sizing Deck Piers JLC Online Decks, Foundation" data-src="http://cdnassets.hw.net/dims4/GG/51db006/2147483647/resize/876x&gt;/quality/90/?url=http:%2F%2Fcdnassets.hw.net%2F25%2F13%2F7d1e32c04542b341bc801c1cc0c3%2Fjlc-fg-foundations-simple-pier-foundations.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="640" height="360" />
+        <small>Source: www.jlconline.com</small>
+                    <p align="justify">Live load distribution factors are computed for moment, shear, and reactions for interior and exterior girders. Computation of lever rule for exterior beam the distribution factor is the reaction, r, about the hinge. In chemistry, the lever rule is a formula used to determine the mole fraction ( xi) or the mass fraction ( wi) of each phase of a.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img lazyload" alt="AASHTOLRFD Live Load Distribution for BeamandSlab" data-src="http://ascelibrary.org/cms/attachment/49953a7e-c4ac-414d-bc99-f2cf9b326f93/3.gif" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="640" height="360" />
+        <small>Source: ascelibrary.org</small>
+                    <p align="justify">For this case, pgsuper will compute gexteriorusing the lever rule for the exterior beam directly and ignore the e factor. C4.6.2.2.1) refined methods of analysis aashto distribution factors. My folder or your last name) before creating the model for a new structure. Lateral load distribution on transverse floor beams in steel plate girder bridges by k. The top plot illustrates.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img lazyload" alt="Frontiers Field Testing of a Prestressed Concrete Bridge" data-src="https://www.frontiersin.org/files/Articles/454783/fbuil-05-00114-HTML/image_m/fbuil-05-00114-t002.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="640" height="360" />
+        <small>Source: www.frontiersin.org</small>
+                    <p align="justify">Note that for both methods, the lever rule is specified for distribution factor calculation. Lever rule • the compositions of the two coexisting phases at a point in a two phase region is given by the points of intersection of the tie line from that point. My folder or your last name) before creating the model for a new structure..</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img lazyload" alt="Selection of Girder Depth and Spacing YouTube" data-src="https://i.ytimg.com/vi/dz_hVay4vXk/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="640" height="360" />
+        <small>Source: www.youtube.com</small>
+                    <p align="justify">Provided in appendix b, these formulae are functionally equivalent to the lever rule. Live load distribution factors are computed for a three span continuous precast girder bridge. For a 5 ft girder spacing, two lanes loaded and a truck with 6&#039; transverse wheel spacing, the worst case loading with the lever rule would be 1.20 wheel lines or 60% of.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img lazyload" alt="wall section of pier and beam structure Google Search" data-src="https://s-media-cache-ak0.pinimg.com/originals/4d/f9/48/4df948798c233b16adf6d87a333cc986.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="640" height="360" />
+        <small>Source: www.pinterest.com</small>
+                    <p align="justify">The ratio of the two phases present can be found by using the lever rule. For example, the equation for the shear, multiple lane distribution factor equation for exterior type k beams is gexterior=eginterior; On studocu you find all the lecture notes, summaries and study guides you need to pass your exams with better grades. The design example and commentary.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img lazyload" alt="Flexural Lateral Load Distribution Characteristics of" data-src="http://ascelibrary.org/cms/attachment/ae76d6d5-09ad-415e-b21d-df7b1781a845/13.gif" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="640" height="360" />
+        <small>Source: ascelibrary.org</small>
+                    <p align="justify">The purpose of this example is to illustrate the use of the aashto lrfd bridge design for the design of a continuous two span. When using the lever rule, example 1, july 2005 draft 6. My folder or your last name) before creating the model for a new structure. This document consists of a comprehensive steel girder bridge design example,.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img lazyload" alt="Distribution factor for exterior open box beam Bridge" data-src="https://res.cloudinary.com/engineering-com/image/upload/v1459774703/tips/Hinge_for_Exterior_Beam_Lever_Rule_bk22ec.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="640" height="360" />
+        <small>Source: www.eng-tips.com</small>
+                    <p align="justify">As per the njdot highway bridge load rating manual, use the lever rule and apply the appropriate multiple presence factor (table d.1.1) along with the skew correction factor to calculate the lrfr distribution factors. My folder or your last name) before creating the model for a new structure. Note that for both methods, the lever rule is specified for distribution.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img lazyload" alt="LiveLoad Testing Application Using a Wireless Sensor" data-src="https://static-01.hindawi.com/articles/js/volume-2014/859486/figures/859486.fig.0010.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="640" height="360" />
+        <small>Source: www.hindawi.com</small>
+                    <p align="justify">The design example and commentary are intended to serve as a guide to aid bridge design engineers with the implementation The purpose of this example is to illustrate the use of the aashto lrfd bridge design for the design of a continuous two span. To get this result, you can place the wheel lines as follows: Haunch between the top.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img lazyload" alt="Multiple Presence Factors PGSuper Resource Center" data-src="https://www.pgsuper.com/content/sites/default/files/banner/Sr90.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="640" height="360" />
+        <small>Source: www.pgsuper.com</small>
+                    <p align="justify">This design example presents an alternative design for that presented in the steel bridge design handbook design example 2a. When using the lever rule, example 1, july 2005 draft 6. Am = calibration constant for the lever rule for moment (4.6.2.2.2) C4.6.2.2.1) refined methods of analysis aashto distribution factors. My folder or your last name) before creating the model for.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img lazyload" alt="Method to Compute LiveLoad Distribution in Bridge Girders" data-src="http://ascelibrary.org/cms/attachment/7aef2d7c-25f0-44ff-9e65-be21b3df2352/3.gif" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="640" height="360" />
+        <small>Source: ascelibrary.org</small>
+                    <p align="justify">Haunch between the top of the girder and the bottom of the deck slab is not included in the. As per the njdot highway bridge load rating manual, use the lever rule and apply the appropriate multiple presence factor (table d.1.1) along with the skew correction factor to calculate the lrfr distribution factors. Lever method gives upper bound on load.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img lazyload" alt="LiveLoad Testing Application Using a Wireless Sensor" data-src="https://static-01.hindawi.com/articles/js/volume-2014/859486/figures/859486.fig.0011.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="640" height="360" />
+        <small>Source: www.hindawi.com</small>
+                    <p align="justify">This example illustrates the design of an interior and exterior beam of a precast prestressed. However if s&gt;16.0, ginteriorwill be computed using the lever rule. Lever method gives upper bound on load in a girder. Computation of lever rule for exterior beam the distribution factor is the reaction, r, about the hinge. How do you calculate exterior girder distribution factors.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img lazyload" alt="Flexural Lateral Load Distribution Characteristics of" data-src="http://ascelibrary.org/cms/attachment/20336/564258/14.gif" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="640" height="360" />
+        <small>Source: ascelibrary.org</small>
+                    <p align="justify">To get this result, you can place the wheel lines as follows: Lever rule • the compositions of the two coexisting phases at a point in a two phase region is given by the points of intersection of the tie line from that point. My folder or your last name) before creating the model for a new structure. The ratio.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img lazyload" alt="Quick Steps of Truss Design Process Vertex BD 2020" data-src="https://kb.vertex.fi/bd2020en/files/41801598/41801601/1/1542889959174/image2016-12-28_14-49-39.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="640" height="360" />
+        <small>Source: kb.vertex.fi</small>
+                    <p align="justify">The design example and commentary are intended to serve as a guide to aid bridge design engineers with the implementation The lever rule assumes that the girders act as rigid supports to the bridge deck. My folder or your last name) before creating the model for a new structure. To get this result, you can place the wheel lines as.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img lazyload" alt="Fulcrum Physics boy play teeter totter game park balance" data-src="http://subscribe.derbytelegraph.co.uk/wp-content/uploads/50966/how-to-balance-a-see-saw-using-moments-example-problem.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="640" height="360" />
+        <small>Source: subscribe.derbytelegraph.co.uk</small>
+                    <p align="justify">The ratio of the two phases present can be found by using the lever rule. E is the distance from the centerline of the exterior girder to the inside face of the curb or barrier. If only one lane is loaded the first axle is placed 2 feet from the face of the curb. Khaira professor in msme deptt. Live.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img lazyload" alt="Scheme of the loading lever and specimen Download" data-src="https://www.researchgate.net/profile/Paolo_Valvo/publication/257621774/figure/download/fig1/AS:503269127409665@1497000118410/Scheme-of-the-loading-lever-and-specimen.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="640" height="360" />
+        <small>Source: www.researchgate.net</small>
+                    <p align="justify">The purpose of this example is to illustrate the use of the aashto lrfd bridge design for the design of a continuous two span. It can be used to determine the fraction of liquid and solid phases for a given binary composition and temperature that is between the liquidus and solidus line. The girder and used for lever rule computations..</p>
+    </aside>
+</section>
+
+<section>
+    <article>
+        <p>
+                        
+                        
+                                    <a href="/where-to-buy-wolfgang-exterior-trim-sealant.html"><i>&larr; where to buy wolfgang exterior trim sealant</i></a>
+                                                                    
+                        
+                                                    <a href="/sherwin-williams-acrylic-latex-exterior-paint.html"><i>sherwin williams acrylic latex exterior paint &rarr;</i></a>
+                                            </p>
+    </article>
+</section>
+        <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>        </center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="p/dmca.html">Dmca</a>
+                            <a href="p/contact.html">Contact</a>
+                            <a href="p/privacy-policy.html">Privacy Policy</a>
+                            <a href="p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"/>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+    <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = '#EDIT-WITH-YOUR-ADS';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+                var query = $('input[name="q"]').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+                var target = 'site:'+location.host+' '+query;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.open(uri, '_blank');
+            });
+        });
+    </script>
+</body>
+
+</html>
